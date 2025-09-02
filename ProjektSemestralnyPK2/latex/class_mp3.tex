@@ -1,0 +1,168 @@
+\doxysection{Mp3 Class Reference}
+\hypertarget{class_mp3}{}\label{class_mp3}\index{Mp3@{Mp3}}
+
+
+Class representing an MP3 file, which is a type of media.  
+
+
+
+
+{\ttfamily \#include $<$c\+\_\+mp3.\+h$>$}
+
+Inheritance diagram for Mp3\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mp3}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mp3_a834926db5f33fbb8b0c0652e5c5b8b8a}{Mp3}} (string title, uint32\+\_\+t year, string genre, uint32\+\_\+t length, uint32\+\_\+t tracks, bool availibility)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_mp3}{Mp3} class. \end{DoxyCompactList}\item 
+\Hypertarget{class_mp3_a5b7357a924f58c6970a299e728db6dd8}\label{class_mp3_a5b7357a924f58c6970a299e728db6dd8} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Mp3} () override
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_mp3}{Mp3} class. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{class_mp3_a90df746d5161b5c2442d528089a35c79}{get\+Tracks}} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of tracks in the MP3 file. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{class_mp3_ac4fd59a4ba5d5387c48f4ea43f746f4f}{get\+Length}} ()
+\begin{DoxyCompactList}\small\item\em Gets the length of the MP3 file in seconds. \end{DoxyCompactList}\item 
+Media\+Type \mbox{\hyperlink{class_mp3_af37e2d7975fcf1c66aec1a464c321ba0}{get\+Media\+Type}} () override
+\begin{DoxyCompactList}\small\item\em Gets the media type of the MP3 file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mp3_a1df16e4f7e62ff472fff987ad180502f}{display}} (ostream \&out) override
+\begin{DoxyCompactList}\small\item\em Displays the MP3 file information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_media}{Media}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_media_a31a736a9bfcbe7ca39c1515cd7994f7d}{Media}} (Media\+Type type, string title, uint32\+\_\+t year, string genre, bool availibility)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_media}{Media} class. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Media} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_media}{Media} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_media_a48be3fad201dd98b5a8a06431d01629a}{set\+Location}} (\mbox{\hyperlink{struct_media_location}{Media\+Location}} location)
+\begin{DoxyCompactList}\small\item\em Sets the location of the media in the library. \end{DoxyCompactList}\item 
+virtual uint32\+\_\+t \mbox{\hyperlink{class_media_aa32e71af42816c5d40c79741bf932b41}{get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Gets the ID of the media item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_media_aa851d389898a944a5d6274a7732a816d}{set\+Id}} (uint32\+\_\+t id)
+\begin{DoxyCompactList}\small\item\em Sets the ID of the media item. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_media_a5a51bc36317b20047a950ee382fb6cd5}{get\+Title}} ()
+\begin{DoxyCompactList}\small\item\em Gets the title of the media item. \end{DoxyCompactList}\item 
+virtual uint32\+\_\+t \mbox{\hyperlink{class_media_a8cb8019ea5d1b14981bd4b6449042dfe}{get\+Year}} ()
+\begin{DoxyCompactList}\small\item\em Gets the author of the media item. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_media_ac2506a58fbc59929715dcef021777630}{get\+Genre}} ()
+\begin{DoxyCompactList}\small\item\em Gets the genre of the media item. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_media_a01df034a16e1bae8f93261ce728061e3}{get\+Availability}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the media item is available. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_media_a6a184a6d224681398fab799a248e7e6a}{toggle\+Availability}} ()
+\begin{DoxyCompactList}\small\item\em Sets the availability of the media item. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_media_ab8709d1a26c4f77e54e6b03ee52f6794}{Media\+Type\+To\+String}} (Media\+Type type)
+\begin{DoxyCompactList}\small\item\em Converts the media type to a string representation. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_media_acd3e56e02941ceee84a99d497bd935cc}{display\+Base}} (ostream \&out)
+\begin{DoxyCompactList}\small\item\em Displays the base information of the media item. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_media_location}{Media\+Location}} \mbox{\hyperlink{class_media_aa0a6390af8fc7147d44c58d6987c5811}{get\+Location}} ()
+\begin{DoxyCompactList}\small\item\em Gets the location of the media item in the library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing an MP3 file, which is a type of media. 
+
+\label{doc-constructors}
+\Hypertarget{class_mp3_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_mp3_a834926db5f33fbb8b0c0652e5c5b8b8a}\index{Mp3@{Mp3}!Mp3@{Mp3}}
+\index{Mp3@{Mp3}!Mp3@{Mp3}}
+\doxysubsubsection{\texorpdfstring{Mp3()}{Mp3()}}
+{\footnotesize\ttfamily \label{class_mp3_a834926db5f33fbb8b0c0652e5c5b8b8a} 
+Mp3\+::\+Mp3 (\begin{DoxyParamCaption}\item[{string}]{title}{, }\item[{uint32\+\_\+t}]{year}{, }\item[{string}]{genre}{, }\item[{uint32\+\_\+t}]{length}{, }\item[{uint32\+\_\+t}]{tracks}{, }\item[{bool}]{availibility}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_mp3}{Mp3} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & \\
+\hline
+{\em year} & \\
+\hline
+{\em genre} & \\
+\hline
+{\em length} & \\
+\hline
+{\em tracks} & \\
+\hline
+{\em availibility} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_mp3_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mp3_a1df16e4f7e62ff472fff987ad180502f}\index{Mp3@{Mp3}!display@{display}}
+\index{display@{display}!Mp3@{Mp3}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \label{class_mp3_a1df16e4f7e62ff472fff987ad180502f} 
+void Mp3\+::display (\begin{DoxyParamCaption}\item[{ostream \&}]{out}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the MP3 file information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_media_a0d3f4ab99259488317fc122360a16190}{Media}}.
+
+\Hypertarget{class_mp3_ac4fd59a4ba5d5387c48f4ea43f746f4f}\index{Mp3@{Mp3}!getLength@{getLength}}
+\index{getLength@{getLength}!Mp3@{Mp3}}
+\doxysubsubsection{\texorpdfstring{getLength()}{getLength()}}
+{\footnotesize\ttfamily \label{class_mp3_ac4fd59a4ba5d5387c48f4ea43f746f4f} 
+uint32\+\_\+t Mp3\+::get\+Length (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gets the length of the MP3 file in seconds. 
+
+\begin{DoxyReturn}{Returns}
+length 
+\end{DoxyReturn}
+\Hypertarget{class_mp3_af37e2d7975fcf1c66aec1a464c321ba0}\index{Mp3@{Mp3}!getMediaType@{getMediaType}}
+\index{getMediaType@{getMediaType}!Mp3@{Mp3}}
+\doxysubsubsection{\texorpdfstring{getMediaType()}{getMediaType()}}
+{\footnotesize\ttfamily \label{class_mp3_af37e2d7975fcf1c66aec1a464c321ba0} 
+Media\+Type Mp3\+::get\+Media\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the media type of the MP3 file. 
+
+\begin{DoxyReturn}{Returns}
+media type 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_media_a4cb1cd803795cdc6e6724338612e0cad}{Media}}.
+
+\Hypertarget{class_mp3_a90df746d5161b5c2442d528089a35c79}\index{Mp3@{Mp3}!getTracks@{getTracks}}
+\index{getTracks@{getTracks}!Mp3@{Mp3}}
+\doxysubsubsection{\texorpdfstring{getTracks()}{getTracks()}}
+{\footnotesize\ttfamily \label{class_mp3_a90df746d5161b5c2442d528089a35c79} 
+uint32\+\_\+t Mp3\+::get\+Tracks (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gets the number of tracks in the MP3 file. 
+
+\begin{DoxyReturn}{Returns}
+tracks 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+c\+\_\+mp3.\+h\item 
+c\+\_\+mp3.\+cpp\end{DoxyCompactItemize}

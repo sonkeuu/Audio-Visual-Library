@@ -1,0 +1,271 @@
+\doxysection{Media Class Reference}
+\hypertarget{class_media}{}\label{class_media}\index{Media@{Media}}
+Inheritance diagram for Media\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_media}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_media_a31a736a9bfcbe7ca39c1515cd7994f7d}{Media}} (Media\+Type type, string title, uint32\+\_\+t year, string genre, bool availibility)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_media}{Media} class. \end{DoxyCompactList}\item 
+\Hypertarget{class_media_a54e7ec283f4ee48f034072776bf9c511}\label{class_media_a54e7ec283f4ee48f034072776bf9c511} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Media} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_media}{Media} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_media_a48be3fad201dd98b5a8a06431d01629a}{set\+Location}} (\mbox{\hyperlink{struct_media_location}{Media\+Location}} location)
+\begin{DoxyCompactList}\small\item\em Sets the location of the media in the library. \end{DoxyCompactList}\item 
+virtual uint32\+\_\+t \mbox{\hyperlink{class_media_aa32e71af42816c5d40c79741bf932b41}{get\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Gets the ID of the media item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_media_aa851d389898a944a5d6274a7732a816d}{set\+Id}} (uint32\+\_\+t id)
+\begin{DoxyCompactList}\small\item\em Sets the ID of the media item. \end{DoxyCompactList}\item 
+virtual Media\+Type \mbox{\hyperlink{class_media_a4cb1cd803795cdc6e6724338612e0cad}{get\+Media\+Type}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets the media type of the item. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_media_a5a51bc36317b20047a950ee382fb6cd5}{get\+Title}} ()
+\begin{DoxyCompactList}\small\item\em Gets the title of the media item. \end{DoxyCompactList}\item 
+virtual uint32\+\_\+t \mbox{\hyperlink{class_media_a8cb8019ea5d1b14981bd4b6449042dfe}{get\+Year}} ()
+\begin{DoxyCompactList}\small\item\em Gets the author of the media item. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_media_ac2506a58fbc59929715dcef021777630}{get\+Genre}} ()
+\begin{DoxyCompactList}\small\item\em Gets the genre of the media item. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_media_a01df034a16e1bae8f93261ce728061e3}{get\+Availability}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the media item is available. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_media_a6a184a6d224681398fab799a248e7e6a}{toggle\+Availability}} ()
+\begin{DoxyCompactList}\small\item\em Sets the availability of the media item. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_media_ab8709d1a26c4f77e54e6b03ee52f6794}{Media\+Type\+To\+String}} (Media\+Type type)
+\begin{DoxyCompactList}\small\item\em Converts the media type to a string representation. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_media_a0d3f4ab99259488317fc122360a16190}{display}} (ostream \&out)=0
+\begin{DoxyCompactList}\small\item\em Displays the media item information. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_media_acd3e56e02941ceee84a99d497bd935cc}{display\+Base}} (ostream \&out)
+\begin{DoxyCompactList}\small\item\em Displays the base information of the media item. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_media_location}{Media\+Location}} \mbox{\hyperlink{class_media_aa0a6390af8fc7147d44c58d6987c5811}{get\+Location}} ()
+\begin{DoxyCompactList}\small\item\em Gets the location of the media item in the library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_media_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_media_a31a736a9bfcbe7ca39c1515cd7994f7d}\index{Media@{Media}!Media@{Media}}
+\index{Media@{Media}!Media@{Media}}
+\doxysubsubsection{\texorpdfstring{Media()}{Media()}}
+{\footnotesize\ttfamily \label{class_media_a31a736a9bfcbe7ca39c1515cd7994f7d} 
+Media\+::\+Media (\begin{DoxyParamCaption}\item[{Media\+Type}]{type}{, }\item[{string}]{title}{, }\item[{uint32\+\_\+t}]{year}{, }\item[{string}]{genre}{, }\item[{bool}]{availibility}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_media}{Media} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+{\em title} & \\
+\hline
+{\em year} & \\
+\hline
+{\em genre} & \\
+\hline
+{\em availibility} & \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_media_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_media_a0d3f4ab99259488317fc122360a16190}\index{Media@{Media}!display@{display}}
+\index{display@{display}!Media@{Media}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \label{class_media_a0d3f4ab99259488317fc122360a16190} 
+virtual void Media\+::display (\begin{DoxyParamCaption}\item[{ostream \&}]{out}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Displays the media item information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_audiobook_a809fac53aeedc1ff306738537ad2112e}{Audiobook}}, \mbox{\hyperlink{class_book_aa42f80ce47fa9d01f3c673cc01de793f}{Book}}, \mbox{\hyperlink{class_cd_aa290adb8de7f0a5b2e99a3be6c19a92b}{Cd}}, \mbox{\hyperlink{class_dvd_a7d88847c74c180618646d34f7e373514}{Dvd}}, \mbox{\hyperlink{class_mp3_a1df16e4f7e62ff472fff987ad180502f}{Mp3}}, and \mbox{\hyperlink{class_pendrive_a550a5b957b2cf6a7563edde74e351e2f}{Pendrive}}.
+
+\Hypertarget{class_media_acd3e56e02941ceee84a99d497bd935cc}\index{Media@{Media}!displayBase@{displayBase}}
+\index{displayBase@{displayBase}!Media@{Media}}
+\doxysubsubsection{\texorpdfstring{displayBase()}{displayBase()}}
+{\footnotesize\ttfamily \label{class_media_acd3e56e02941ceee84a99d497bd935cc} 
+void Media\+::display\+Base (\begin{DoxyParamCaption}\item[{ostream \&}]{out}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Displays the base information of the media item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_media_a01df034a16e1bae8f93261ce728061e3}\index{Media@{Media}!getAvailability@{getAvailability}}
+\index{getAvailability@{getAvailability}!Media@{Media}}
+\doxysubsubsection{\texorpdfstring{getAvailability()}{getAvailability()}}
+{\footnotesize\ttfamily \label{class_media_a01df034a16e1bae8f93261ce728061e3} 
+bool Media\+::get\+Availability (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Checks if the media item is available. 
+
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+\Hypertarget{class_media_ac2506a58fbc59929715dcef021777630}\index{Media@{Media}!getGenre@{getGenre}}
+\index{getGenre@{getGenre}!Media@{Media}}
+\doxysubsubsection{\texorpdfstring{getGenre()}{getGenre()}}
+{\footnotesize\ttfamily \label{class_media_ac2506a58fbc59929715dcef021777630} 
+string Media\+::get\+Genre (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the genre of the media item. 
+
+\begin{DoxyReturn}{Returns}
+genre 
+\end{DoxyReturn}
+\Hypertarget{class_media_aa32e71af42816c5d40c79741bf932b41}\index{Media@{Media}!getId@{getId}}
+\index{getId@{getId}!Media@{Media}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily \label{class_media_aa32e71af42816c5d40c79741bf932b41} 
+uint32\+\_\+t Media\+::get\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the ID of the media item. 
+
+\begin{DoxyReturn}{Returns}
+id 
+\end{DoxyReturn}
+\Hypertarget{class_media_aa0a6390af8fc7147d44c58d6987c5811}\index{Media@{Media}!getLocation@{getLocation}}
+\index{getLocation@{getLocation}!Media@{Media}}
+\doxysubsubsection{\texorpdfstring{getLocation()}{getLocation()}}
+{\footnotesize\ttfamily \label{class_media_aa0a6390af8fc7147d44c58d6987c5811} 
+\mbox{\hyperlink{struct_media_location}{Media\+Location}} Media\+::get\+Location (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gets the location of the media item in the library. 
+
+\begin{DoxyReturn}{Returns}
+location 
+\end{DoxyReturn}
+\Hypertarget{class_media_a4cb1cd803795cdc6e6724338612e0cad}\index{Media@{Media}!getMediaType@{getMediaType}}
+\index{getMediaType@{getMediaType}!Media@{Media}}
+\doxysubsubsection{\texorpdfstring{getMediaType()}{getMediaType()}}
+{\footnotesize\ttfamily \label{class_media_a4cb1cd803795cdc6e6724338612e0cad} 
+virtual Media\+Type Media\+::get\+Media\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the media type of the item. 
+
+\begin{DoxyReturn}{Returns}
+media type 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_audiobook_a9d6f4def7fde0731fd68fdf5e120950a}{Audiobook}}, \mbox{\hyperlink{class_book_a31753ed6e09e6b803a42fd1685db2e85}{Book}}, \mbox{\hyperlink{class_cd_aada652791fdedbcf90deb33a41a5e651}{Cd}}, \mbox{\hyperlink{class_dvd_a4b40b77da32ced43cc50e62a5a5ffc10}{Dvd}}, \mbox{\hyperlink{class_mp3_af37e2d7975fcf1c66aec1a464c321ba0}{Mp3}}, and \mbox{\hyperlink{class_pendrive_a6040f291a85946a87c8c6d6e6f4f0402}{Pendrive}}.
+
+\Hypertarget{class_media_a5a51bc36317b20047a950ee382fb6cd5}\index{Media@{Media}!getTitle@{getTitle}}
+\index{getTitle@{getTitle}!Media@{Media}}
+\doxysubsubsection{\texorpdfstring{getTitle()}{getTitle()}}
+{\footnotesize\ttfamily \label{class_media_a5a51bc36317b20047a950ee382fb6cd5} 
+string Media\+::get\+Title (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the title of the media item. 
+
+\begin{DoxyReturn}{Returns}
+title 
+\end{DoxyReturn}
+\Hypertarget{class_media_a8cb8019ea5d1b14981bd4b6449042dfe}\index{Media@{Media}!getYear@{getYear}}
+\index{getYear@{getYear}!Media@{Media}}
+\doxysubsubsection{\texorpdfstring{getYear()}{getYear()}}
+{\footnotesize\ttfamily \label{class_media_a8cb8019ea5d1b14981bd4b6449042dfe} 
+uint32\+\_\+t Media\+::get\+Year (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the author of the media item. 
+
+\begin{DoxyReturn}{Returns}
+year 
+\end{DoxyReturn}
+\Hypertarget{class_media_ab8709d1a26c4f77e54e6b03ee52f6794}\index{Media@{Media}!MediaTypeToString@{MediaTypeToString}}
+\index{MediaTypeToString@{MediaTypeToString}!Media@{Media}}
+\doxysubsubsection{\texorpdfstring{MediaTypeToString()}{MediaTypeToString()}}
+{\footnotesize\ttfamily \label{class_media_ab8709d1a26c4f77e54e6b03ee52f6794} 
+string Media\+::\+Media\+Type\+To\+String (\begin{DoxyParamCaption}\item[{Media\+Type}]{type}{}\end{DoxyParamCaption})}
+
+
+
+Converts the media type to a string representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+media type as string 
+\end{DoxyReturn}
+\Hypertarget{class_media_aa851d389898a944a5d6274a7732a816d}\index{Media@{Media}!setId@{setId}}
+\index{setId@{setId}!Media@{Media}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily \label{class_media_aa851d389898a944a5d6274a7732a816d} 
+void Media\+::set\+Id (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Sets the ID of the media item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_media_a48be3fad201dd98b5a8a06431d01629a}\index{Media@{Media}!setLocation@{setLocation}}
+\index{setLocation@{setLocation}!Media@{Media}}
+\doxysubsubsection{\texorpdfstring{setLocation()}{setLocation()}}
+{\footnotesize\ttfamily \label{class_media_a48be3fad201dd98b5a8a06431d01629a} 
+void Media\+::set\+Location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_media_location}{Media\+Location}}}]{location}{}\end{DoxyParamCaption})}
+
+
+
+Sets the location of the media in the library. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_media_a6a184a6d224681398fab799a248e7e6a}\index{Media@{Media}!toggleAvailability@{toggleAvailability}}
+\index{toggleAvailability@{toggleAvailability}!Media@{Media}}
+\doxysubsubsection{\texorpdfstring{toggleAvailability()}{toggleAvailability()}}
+{\footnotesize\ttfamily \label{class_media_a6a184a6d224681398fab799a248e7e6a} 
+bool Media\+::toggle\+Availability (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the availability of the media item. 
+
+\begin{DoxyReturn}{Returns}
+true or false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+c\+\_\+media.\+h\item 
+c\+\_\+media.\+cpp\end{DoxyCompactItemize}

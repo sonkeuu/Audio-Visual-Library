@@ -1,0 +1,158 @@
+\doxysection{Media\+Serializer Class Reference}
+\hypertarget{class_media_serializer}{}\label{class_media_serializer}\index{MediaSerializer@{MediaSerializer}}
+
+
+Class for serializing and deserializing media items.  
+
+
+
+
+{\ttfamily \#include $<$serializer.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_media_serializer_a8e3a477416d3bce1bdcdf14e1304d840}{Media\+Serializer}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_media_serializer}{Media\+Serializer} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_media_serializer_ab2d835366af636469a82e8344fca6e26}{\texorpdfstring{$\sim$}{\string~}\+Media\+Serializer}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_media_serializer}{Media\+Serializer} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_media_serializer_a062c61e0c513d982579014b01c158228}{Serialize}} (\mbox{\hyperlink{class_media}{Media}} \texorpdfstring{$\ast$}{*}item, ofstream \texorpdfstring{$\ast$}{*}stream)
+\begin{DoxyCompactList}\small\item\em Serializes a media item to a file stream. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_media}{Media}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_media_serializer_a7257560cf116a83f8123b0a60565fc72}{Deserialize}} (ifstream \texorpdfstring{$\ast$}{*}stream)
+\begin{DoxyCompactList}\small\item\em Deserializes media items from a file stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_media_location}{Media\+Location}} \mbox{\hyperlink{class_media_serializer_a9ff3aeff70fda9ebd227c6fc0bbc8e5b}{Find\+Free\+Location}} (vector$<$ \mbox{\hyperlink{class_media}{Media}} \texorpdfstring{$\ast$}{*} $>$ items)
+\begin{DoxyCompactList}\small\item\em Finds a free location for media items in the storage. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_media}{Media}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_media_serializer_a423b5a0d19c100a223125368e7980fd4}{Get\+Media\+By\+Location}} (\mbox{\hyperlink{struct_media_location}{Media\+Location}} location, vector$<$ \mbox{\hyperlink{class_media}{Media}} \texorpdfstring{$\ast$}{*} $>$ items)
+\begin{DoxyCompactList}\small\item\em Gets a media item by its location from a vector of media items. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_media_serializer_acf4b1a365dd9f5578d8716657214285d}{Arrange\+Shelf}} (vector$<$ \mbox{\hyperlink{class_media}{Media}} \texorpdfstring{$\ast$}{*} $>$ items)
+\begin{DoxyCompactList}\small\item\em Arranges the shelf by placing media items in their respective locations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for serializing and deserializing media items. 
+
+\label{doc-constructors}
+\Hypertarget{class_media_serializer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_media_serializer_a8e3a477416d3bce1bdcdf14e1304d840}\index{MediaSerializer@{MediaSerializer}!MediaSerializer@{MediaSerializer}}
+\index{MediaSerializer@{MediaSerializer}!MediaSerializer@{MediaSerializer}}
+\doxysubsubsection{\texorpdfstring{MediaSerializer()}{MediaSerializer()}}
+{\footnotesize\ttfamily \label{class_media_serializer_a8e3a477416d3bce1bdcdf14e1304d840} 
+Media\+Serializer\+::\+Media\+Serializer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_media_serializer}{Media\+Serializer} class. 
+
+\Hypertarget{class_media_serializer_ab2d835366af636469a82e8344fca6e26}\index{MediaSerializer@{MediaSerializer}!````~MediaSerializer@{\texorpdfstring{$\sim$}{\string~}MediaSerializer}}
+\index{````~MediaSerializer@{\texorpdfstring{$\sim$}{\string~}MediaSerializer}!MediaSerializer@{MediaSerializer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}MediaSerializer()}{\string~MediaSerializer()}}
+{\footnotesize\ttfamily \label{class_media_serializer_ab2d835366af636469a82e8344fca6e26} 
+Media\+Serializer\+::\texorpdfstring{$\sim$}{\string~}\+Media\+Serializer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor for \doxylink{class_media_serializer}{Media\+Serializer} class. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_media_serializer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_media_serializer_acf4b1a365dd9f5578d8716657214285d}\index{MediaSerializer@{MediaSerializer}!ArrangeShelf@{ArrangeShelf}}
+\index{ArrangeShelf@{ArrangeShelf}!MediaSerializer@{MediaSerializer}}
+\doxysubsubsection{\texorpdfstring{ArrangeShelf()}{ArrangeShelf()}}
+{\footnotesize\ttfamily \label{class_media_serializer_acf4b1a365dd9f5578d8716657214285d} 
+void Media\+Serializer\+::\+Arrange\+Shelf (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_media}{Media}} \texorpdfstring{$\ast$}{*} $>$}]{items}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Arranges the shelf by placing media items in their respective locations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em items} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_media_serializer_a7257560cf116a83f8123b0a60565fc72}\index{MediaSerializer@{MediaSerializer}!Deserialize@{Deserialize}}
+\index{Deserialize@{Deserialize}!MediaSerializer@{MediaSerializer}}
+\doxysubsubsection{\texorpdfstring{Deserialize()}{Deserialize()}}
+{\footnotesize\ttfamily \label{class_media_serializer_a7257560cf116a83f8123b0a60565fc72} 
+vector$<$ \mbox{\hyperlink{class_media}{Media}} \texorpdfstring{$\ast$}{*} $>$ Media\+Serializer\+::\+Deserialize (\begin{DoxyParamCaption}\item[{ifstream \texorpdfstring{$\ast$}{*}}]{stream}{}\end{DoxyParamCaption})}
+
+
+
+Deserializes media items from a file stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector of \doxylink{class_media}{Media} items 
+\end{DoxyReturn}
+\Hypertarget{class_media_serializer_a9ff3aeff70fda9ebd227c6fc0bbc8e5b}\index{MediaSerializer@{MediaSerializer}!FindFreeLocation@{FindFreeLocation}}
+\index{FindFreeLocation@{FindFreeLocation}!MediaSerializer@{MediaSerializer}}
+\doxysubsubsection{\texorpdfstring{FindFreeLocation()}{FindFreeLocation()}}
+{\footnotesize\ttfamily \label{class_media_serializer_a9ff3aeff70fda9ebd227c6fc0bbc8e5b} 
+\mbox{\hyperlink{struct_media_location}{Media\+Location}} Media\+Serializer\+::\+Find\+Free\+Location (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_media}{Media}} \texorpdfstring{$\ast$}{*} $>$}]{items}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Finds a free location for media items in the storage. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em items} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+location 
+\end{DoxyReturn}
+\Hypertarget{class_media_serializer_a423b5a0d19c100a223125368e7980fd4}\index{MediaSerializer@{MediaSerializer}!GetMediaByLocation@{GetMediaByLocation}}
+\index{GetMediaByLocation@{GetMediaByLocation}!MediaSerializer@{MediaSerializer}}
+\doxysubsubsection{\texorpdfstring{GetMediaByLocation()}{GetMediaByLocation()}}
+{\footnotesize\ttfamily \label{class_media_serializer_a423b5a0d19c100a223125368e7980fd4} 
+\mbox{\hyperlink{class_media}{Media}} \texorpdfstring{$\ast$}{*} Media\+Serializer\+::\+Get\+Media\+By\+Location (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_media_location}{Media\+Location}}}]{location}{, }\item[{vector$<$ \mbox{\hyperlink{class_media}{Media}} \texorpdfstring{$\ast$}{*} $>$}]{items}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gets a media item by its location from a vector of media items. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & \\
+\hline
+{\em items} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_media}{Media} item or NULL 
+\end{DoxyReturn}
+\Hypertarget{class_media_serializer_a062c61e0c513d982579014b01c158228}\index{MediaSerializer@{MediaSerializer}!Serialize@{Serialize}}
+\index{Serialize@{Serialize}!MediaSerializer@{MediaSerializer}}
+\doxysubsubsection{\texorpdfstring{Serialize()}{Serialize()}}
+{\footnotesize\ttfamily \label{class_media_serializer_a062c61e0c513d982579014b01c158228} 
+void Media\+Serializer\+::\+Serialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_media}{Media}} \texorpdfstring{$\ast$}{*}}]{item}{, }\item[{ofstream \texorpdfstring{$\ast$}{*}}]{stream}{}\end{DoxyParamCaption})}
+
+
+
+Serializes a media item to a file stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & \\
+\hline
+{\em stream} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{serializer_8h}{serializer.\+h}}\item 
+\mbox{\hyperlink{serializer_8cpp}{serializer.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,32 @@
+\doxysection{c\+\_\+dvd.\+h}
+\hypertarget{c__dvd_8h_source}{}\label{c__dvd_8h_source}\mbox{\hyperlink{c__dvd_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{c__media_8h}{c\_media.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_dvd_a271bacf914a7e58661a53de4e53a3aa2}{Dvd}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_media_a31a736a9bfcbe7ca39c1515cd7994f7d}{Media}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{c__media_8h_a1499e9f8a76cb81b43b7a4b0dbe7e44a}{MediaType}}\ \mbox{\hyperlink{class_dvd_a5afe43db7348098aca25eab2e6a35e87}{type}}\ =\ \mbox{\hyperlink{c__media_8h_a1499e9f8a76cb81b43b7a4b0dbe7e44aa478dbba07d8374be6c8ab12eb47242a6}{MediaType::DVD}};}
+\DoxyCodeLine{00012\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{class_dvd_a056abde7e99983ccfa709d9457a7012b}{length}};}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_dvd_a00a504b5c508f8c060f52a92a16054da}{director}};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_dvd_a271bacf914a7e58661a53de4e53a3aa2}{Dvd}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_media_a9ae5d25b2be0d4387e116d14468d2e99}{title}},\ uint32\_t\ \mbox{\hyperlink{class_media_a17e4a477deeeef8d1fc8ab66df89b707}{year}},\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_media_ae2674832d35fce56e074a83132c0fbe6}{genre}},\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_dvd_a00a504b5c508f8c060f52a92a16054da}{director}},\ uint32\_t\ \mbox{\hyperlink{class_dvd_a056abde7e99983ccfa709d9457a7012b}{length}},\ \textcolor{keywordtype}{bool}\ availibility\textcolor{comment}{/*,\ LocationInLibrary\ location*/});}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_dvd_a988e13997c9ec4f5e67a59ae09771a8a}{\string~Dvd}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_dvd_a1842f4f7a78e2c03904695bc806a3016}{getDirector}}();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00035\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{class_dvd_a858f19f13f3f1d5f6188d235c433f7ec}{getLength}}();}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{c__media_8h_a1499e9f8a76cb81b43b7a4b0dbe7e44a}{MediaType}}\ \mbox{\hyperlink{class_dvd_a4b40b77da32ced43cc50e62a5a5ffc10}{getMediaType}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dvd_a7d88847c74c180618646d34f7e373514}{display}}(ostream\&\ out)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00044\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,5 @@
+// TYPE ; TITLE ; GENRE ; YEAR ; AUTHOR ; LENGTH ; LOCATION ; STATUS
+
+book;"Of nothing";none;2137;me;321;library;available
+book;"Harry Potter";fantasy;2000;J.K. Rowling;500;library;available
+audiobook;"Madagascar 2";fairy tale;1998;me;90;library;available

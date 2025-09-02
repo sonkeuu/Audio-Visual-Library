@@ -1,0 +1,73 @@
+-------- STORAGE ---------
+Media Type: AUDIOBOOK
+ID: 2
+Title: AA
+Year: 2024
+Genre: Drama
+Availability: Not Available
+Author: AAAA
+Chapters: 10
+--------------------------
+Media Type: CD
+ID: 4
+Title: dw
+Year: 212
+Genre: dw
+Availability: Not Available
+Author: dmw
+Tracks: 1221
+--------------------------
+Media Type: PENDRIVE
+ID: 5
+Title: pdwdj wd
+Year: 2828
+Genre: dis
+Availability: Available
+Content: noone;;;;;;;;;;
+Capicity: 291 GB
+--------------------------
+Media Type: DVD
+ID: 6
+Title: 1221
+Year: 2112
+Genre: 2121
+Availability: Available
+Director: 211212
+Length: 121212 minutes
+--------------------------
+Media Type: AUDIOBOOK
+ID: 7
+Title: 1212
+Year: 121
+Genre: 1212
+Availability: Available
+Author: 2112
+Chapters: 1221
+--------------------------
+Media Type: AUDIOBOOK
+ID: 8
+Title: 22
+Year: 22
+Genre: 22
+Availability: Available
+Author: 22
+Chapters: 22
+--------------------------
+Media Type: AUDIOBOOK
+ID: 9
+Title: 1321
+Year: 22
+Genre: fe
+Availability: Available
+Author: 21e2
+Chapters: 0
+--------------------------
+Media Type: BOOK
+ID: 10
+Title: dwdw
+Year: 212
+Genre: dwdq2
+Availability: Available
+Author: 2d2d
+Pages: 11
+--------------------------

@@ -1,0 +1,61 @@
+\doxysection{storage.\+h}
+\hypertarget{storage_8h_source}{}\label{storage_8h_source}\mbox{\hyperlink{storage_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{c__media_8h}{c\_media.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_storage_a80ef6af5e4c9fd4424ae16e808d05291}{Storage}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_storage_a2ed25626223b913729f07559ec1c019b}{CheckIfLocationExists}}(\mbox{\hyperlink{struct_media_location}{MediaLocation}}\ location);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{struct_media_location}{MediaLocation}}\ \mbox{\hyperlink{class_storage_a148104f21b064188c9e79bbd15762f5a}{FindFreeLocation}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_media}{Media}}*\ \mbox{\hyperlink{class_storage_ac9fd4754a7de8b297ed1825264817a42}{GetMediaByLocation}}(\mbox{\hyperlink{struct_media_location}{MediaLocation}}\ location);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_storage_a8946c3c3030d3e2cb91e1038f4944546}{ArrangeAllLocations}}();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_storage_a82a3ade11f4e51b8b89b1e41595febe1}{ArrangeLocationById}}(uint32\_t\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \ \ \ \ vector<Media*>\ \mbox{\hyperlink{class_storage_a17e28f2c8b7da4529ca1fa4ded59cfee}{items}};}
+\DoxyCodeLine{00038\ \ \ \ \ uint32\_t\ \mbox{\hyperlink{class_storage_ab4fb2fac74611cbe478d9c848a10aaed}{last\_id}}\ =\ 0;}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_storage_a5a1d903c56a6e3b7ef39b1b4269f2193}{setLastId}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_storage_ab4fb2fac74611cbe478d9c848a10aaed}{last\_id}}\ =\ id;}
+\DoxyCodeLine{00044\ \ \ \ \ \}}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_storage_a3448a417e163e1bae5a6a6edd9790f59}{MAX\_SHELF}}\ =\ 10;}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_storage_aa8b2430b4ef625de8161543aeb3fac9d}{MAX\_CABINET}}\ =\ 10;}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_storage_a80ef6af5e4c9fd4424ae16e808d05291}{Storage}}();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_storage_a73cf30f0a34250396f9eabee7dc5c93d}{\string~Storage}}();}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_storage_a7f18f15a64dcdddc8cb6b8a0cdc51e90}{AddMedia}}(\mbox{\hyperlink{class_media}{Media}}*\ instance);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_storage_a0697918f58cf5d603c7ed5e647973719}{RemoveMedia}}(uint32\_t\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_storage_a2be0cf442d3f10f5ff115acb88de2504}{ToggleMediaAvailability}}(uint32\_t\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_storage_afc15c87aeba9b6407f83b27880c23f5d}{DisplayAllItems}}(ostream\&\ out);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_storage_aed90735cc4c1a1b574911211f23b80f4}{DisplayMediaById}}(uint32\_t\ \textcolor{keywordtype}{id},\ ostream\&\ out);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_storage_a3406d7e8d2e45dbc925d4f56d7d0c095}{Commit}}()\ =\ 0;}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00082\ \ \ \ \ \mbox{\hyperlink{struct_media_location}{MediaLocation}}\ \mbox{\hyperlink{class_storage_a67740272b258b192325bea8839e98521}{GetMediaLocation}}(uint32\_t\ media\_id);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_storage_a50ebbe869a704425c112ab18d1218ff3}{SetMediaLocation}}(uint32\_t\ media\_id,\ \mbox{\hyperlink{struct_media_location}{MediaLocation}}\ location);}
+\DoxyCodeLine{00089\ \};}
+
+\end{DoxyCode}
